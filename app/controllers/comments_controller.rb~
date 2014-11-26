@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
     def new
 	unless params[:name]
-           @comment = Comment.new(name: cookies[:name])
+        @comment = Comment.new(name: cookies[:name])
 	end
     end
 

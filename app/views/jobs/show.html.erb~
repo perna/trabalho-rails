@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<p id="alert"><%= alert %></p>
+<p id="alert"><%=flash[:alert]%></p>
 <p>
   <strong>Title:</strong>
   <%= @job.title %>
