@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  resources :jobs
+
+  resources :jobs do
+    #post "comments", to: "comments#create"
+    resources :comments
+  end
+  delete "comments/:id", to: "comments#destroy", as: :comment
+  #get "hello/world"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

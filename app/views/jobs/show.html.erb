@@ -12,3 +12,9 @@
 
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>
+
+<h2>Envie um comentário</h2>
+<%= render "comments/form" %>
+
+<h2>Comentários</h2>
+<%= render @job.comments %>
